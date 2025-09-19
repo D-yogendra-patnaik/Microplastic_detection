@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRISM - Microplastic Detecting Sensor</title>
+    <link rel="stylesheet" href="{{url_for('static' , filename='index.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Team Sudarshan</h1>
+                </div>
+                
+                <nav class="desktop-nav">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#prototypes" class="nav-link">Prototypes</a>
+                    <a href="#chat" class="nav-link">AI Assistant</a>
+                    <a href="#blog" class="nav-link">Blog</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="close-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="mobile-nav hidden" id="mobileNav">
+                <div class="mobile-nav-content">
+                    <a href="#home" class="mobile-nav-link">Home</a>
+                    <a href="#prototypes" class="mobile-nav-link">Prototypes</a>
+                    <a href="#chat" class="mobile-nav-link">AI Assistant</a>
+                    <a href="#blog" class="mobile-nav-link">Blog</a>
+                    <a href="#contact" class="mobile-nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container" id="home">
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <h1>Welcome to PRISM</h1>
+            <p>Plastic Recognition using Integrated Scattered Monitoring</p>
+        </div>
+
+        <!-- Main Content Grid -->
+        <div class="content-grid">
+            <!-- Top Row: Prototype Section and Chatbot -->
+            <div class="top-row">
+                <!-- Prototype Section -->
+                <div class="prototype-section" id="prototypes">
+                    <div class="section-header">
+                        <h2>Prototype</h2>
+                        <p>Discover our latest interactive design concepts</p>
+                    </div>
+
+                    <div class="prototype-card">
+                        <div class="prototype-image-container">
+                            <img src="{{url_for('static',filename='images/image.png')}}" alt="Modern Prototype Design" class="prototype-image">
+                            <div class="prototype-badge">
+                                <span class="badge">Active</span>
+                            </div>
+                        </div>
+                        
+                        <div class="prototype-content">
+                            <div class="prototype-header">
+                                <div class="title-rating">
+                                    <h3>Mobile App Interface</h3>
+                                    <div class="rating">
+                                        <svg class="star-icon" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon>
+                                        </svg>
+                                        <span>4.8</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="prototype-meta">
+                                    <div class="meta-item">
+                                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="12" cy="7" r="4"></circle>
+                                        </svg>
+                                        <span>ID: PROTO-2024-001</span>
+                                    </div>
+                                    <div class="meta-item">
+                                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        <span>Innovated By : Team Sudarshan</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="prototype-description">
+                                A modern, user-friendly mobile application interface featuring intuitive navigation, 
+                                clean design patterns, and accessibility-first approach. This prototype showcases 
+                                the latest UI/UX trends and best practices.
+                            </p>
+
+                            <div class="prototype-tags">
+                                <span class="tag">React Native</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">Mobile First</span>
+                            </div>
+
+                            <div class="prototype-stats">
+                                <div class="stat">
+                                    <div class="stat-number">124</div>
+                                    <div class="stat-label">Views</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-number">8</div>
+                                    <div class="stat-label">Comments</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-number">15</div>
+                                    <div class="stat-label">Likes</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chatbot Section -->
+                <div class="chatbot-section" id="chat">
+                    <div class="section-header">
+                        <div class="header-with-icon">
+                            <svg class="sparkles-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+                                <path d="M5 3v4"></path>
+                                <path d="M19 17v4"></path>
+                                <path d="M3 5h4"></path>
+                                <path d="M17 19h4"></path>
+                            </svg>
+                            <h2>Water Sample Test Assistant</h2>
+                        </div>
+                        <p>Upload Images of sample, search for sample testing information</p>
+                    </div>
+
+                    <div class="chatbot-container">
+                        <div class="chat-header">
+                            <div class="online-indicator">
+                                <div class="status-dot"></div>
+                                <span>Search for Sample details</span>
+                            </div>
+                        </div>
+
+                        <div class="chat-messages" id="chatMessages">
+                            <div class="message bot-message">
+                                <div class="message-avatar bot-avatar">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 8V4H8"></path>
+                                        <rect width="16" height="12" x="4" y="8" rx="2"></rect>
+                                        <path d="m9 16 0 0"></path>
+                                        <path d="m15 16 0 0"></path>
+                                    </svg>
+                                </div>
+                                <div class="message-content">
+                                    <div class="message-bubble bot-bubble">
+                                        Hello! I'm your AI assistant. I can help you with water sample testing and microplastic detection. Ask me a question to begin.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-input-container">
+                            <div class="input-wrapper">
+                                <input type="text" id="chatInput" placeholder="Type your query..." class="chat-input">
+                                <button id="sendButton" class="send-button" disabled>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m22 2-7 20-4-9-9-4Z"></path>
+                                        <path d="M22 2 11 13"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blogs-section" id="blog">
+    <!-- Blog Posts -->
+    <div class="blog-posts">
+        <div class="section-header">
+            <div class="header-with-icon">
+                <svg class="book-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
+                </svg>
+                <h2>Research & References</h2>
+            </div>
+            <p>Explore useful articles and references about microplastic detection and water quality</p>
+        </div>
+
+        <div class="blog-grid">
+            <!-- Ref 1 -->
+            <div class="blog-card">
+                <div class="blog-image-container">
+                    <img src="{{url_for('static', filename='images/Surfactant.png')}}"
+                         alt="Surfactant and Additives Database" class="blog-image">
+                    <div class="blog-category"><span class="badge">Database</span></div>
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Surfactant and Additives Database</h3>
+                    <p class="blog-excerpt">A comprehensive database of surfactants and polymer additives for microplastic-related studies.</p>
+                    <button class="read-more-btn" onclick="window.open('https://cb.imsc.res.in/saopadditives/', '_blank')">
+                        Visit Reference
+                        <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Ref 2 -->
+            <div class="blog-card">
+                <div class="blog-image-container">
+                    <img src="{{url_for('static', filename='images/Microplastics_and_Human_Health.png')}}" 
+                         alt="Microplastics and Health" class="blog-image">
+                    <div class="blog-category"><span class="badge">Research</span></div>
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Microplastics and Human Health</h3>
+                    <p class="blog-excerpt">An article from PubMed Central discussing microplastic exposure and its health effects.</p>
+                    <button class="read-more-btn" onclick="window.open('https://pmc.ncbi.nlm.nih.gov/articles/PMC10589325/', '_blank')">
+                        Visit Reference
+                        <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Ref 3 -->
+            <div class="blog-card">
+                <div class="blog-image-container">
+                    <img src="{{url_for('static', filename='images/marine_debris.png')}}" 
+                         alt="NOAA Marine Debris Program" class="blog-image">
+                    <div class="blog-category"><span class="badge">Environment</span></div>
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">NOAA Marine Debris Program</h3>
+                    <p class="blog-excerpt">Resources and updates on global marine debris and microplastic pollution by NOAA.</p>
+                    <button class="read-more-btn" onclick="window.open('https://marinedebris.noaa.gov/', '_blank')">
+                        Visit Reference
+                        <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Ref 4 -->
+            <div class="blog-card">
+                <div class="blog-image-container">
+                    <img src="{{url_for('static', filename='images/water_quality_monitoring.png')}}" 
+                         alt="ArcGIS Water Quality Dashboard" class="blog-image">
+                    <div class="blog-category"><span class="badge">GIS</span></div>
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Water Quality Monitoring Dashboard</h3>
+                    <p class="blog-excerpt">An interactive ArcGIS experience for monitoring global water quality and contamination.</p>
+                    <button class="read-more-btn" onclick="window.open('https://experience.arcgis.com/experience/b296879cc1984fda833a8acc93e31476', '_blank')">
+                        Visit Reference
+                        <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Ref 5 -->
+            <div class="blog-card">
+                <div class="blog-image-container">
+                    <img src="{{url_for('static', filename='images/market.png')}}" 
+                         alt="Water Quality Monitoring Systems Market Report" class="blog-image">
+                    <div class="blog-category"><span class="badge">Market</span></div>
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Water Quality Monitoring Systems Market</h3>
+                    <p class="blog-excerpt">Grand View Research report analyzing the global water quality monitoring industry.</p>
+                    <button class="read-more-btn" onclick="window.open('https://www.grandviewresearch.com/industry-analysis/water-quality-monitoring-systems-market-report', '_blank')">
+                        Visit Reference
+                        <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Ref 6 -->
+            <div class="blog-card">
+                <div class="blog-image-container">
+                    <img src="{{url_for('static', filename='images/European_commission.png')}}" 
+                         alt="Rapid Detection by Nile Red & Flow Cytometry" class="blog-image">
+                    <div class="blog-category"><span class="badge">Innovation</span></div>
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Rapid Detection: Nile Red & Flow Cytometry</h3>
+                    <p class="blog-excerpt">European Commission press release on new rapid detection methods for microplastics.</p>
+                    <button class="read-more-btn" onclick="window.open('https://ec.europa.eu/commission/presscorner/detail/en/ip_23_4581', '_blank')">
+                        Visit Reference
+                        <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Ref 7 -->
+            <div class="blog-card">
+                <div class="blog-content">
+                    <h3 class="blog-title">Nile Red Staining & Machine Learning</h3>
+                    <p class="blog-excerpt">Automated microplastic identification using RGB imaging and machine learning approaches.</p>
+                    <button class="read-more-btn">
+                        Reference Pending (Add PDF/Link)
+                        <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Ref 8 -->
+            <div class="blog-card">
+                <div class="blog-content">
+                    <h3 class="blog-title">Nile Red UV Staining with μ-Raman</h3>
+                    <p class="blog-excerpt">Technique combining UV Nile Red staining and μ-Raman spectroscopy for large microplastic detection.</p>
+                    <button class="read-more-btn">
+                        Reference Pending (Add PDF/Link)
+                        <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>PRISM</h3>
+                    <p>Modern microplastic detection platform with AI assistance and comprehensive water sample analysis.</p>
+                </div>
+                
+                
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <div class="footer-links">
+                        <a href="#blog">Blog</a>
+                        <a href="#">Tutorials</a>
+                        <a href="#">Community</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <div class="footer-links">
+                        <a href="#">Help Center</a>
+                        <a href="24cseaiml308.dyogendrapatnaik@giet.edu">Contact Us </a>
+                        <a href="#">Status</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sudarshan . All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{url_for('static' , filename='script.js')}}"></script>
+</body>
+</html>
